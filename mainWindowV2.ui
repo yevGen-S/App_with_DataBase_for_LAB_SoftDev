@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>991</width>
+    <height>629</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="styleSheet">
+       <string notr="true">QFrame{
+	
+	background-color: rgb(42, 47, 57);
+
+}</string>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="tabQueries">
+       <attribute name="title">
+        <string>Queries</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QFrame" name="tabQueriesFrame">
+          <property name="styleSheet">
+           <string notr="true">QFrame{
+	
+	background-color: rgb(42, 47, 57);
+
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QFrame" name="frameQueries">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_8">
+              <item>
+               <widget class="QFrame" name="pagesQueriesBtns">
+                <property name="styleSheet">
+                 <string notr="true">QFrame{
+	
+	background-color: rgb(83, 83, 83);
+
+
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_8">
+                 <item>
+                  <widget class="QPushButton" name="btnRecruit">
+                   <property name="text">
+                    <string>RECRUITING</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnStartProject">
+                   <property name="text">
+                    <string>STARTING PROJECT</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnTransfer">
+                   <property name="text">
+                    <string>TRASNFERING</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnFire">
+                   <property name="text">
+                    <string>FIRING</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnEndProject">
+                   <property name="text">
+                    <string>ENDING PROJECT</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QStackedWidget" name="frameQueriesPages">
+                <property name="currentIndex">
+                 <number>3</number>
+                </property>
+                <widget class="QWidget" name="recruitPage">
+                 <layout class="QHBoxLayout" name="horizontalLayout_9">
+                  <item>
+                   <layout class="QGridLayout" name="addEmployee">
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="labelSelectJob">
+                      <property name="text">
+                       <string>Select jop</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="2">
+                     <widget class="QComboBox" name="projectBox"/>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QLineEdit" name="addName"/>
+                    </item>
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="labelEmployeeName">
+                      <property name="text">
+                       <string>Recruiting 
+Employee name</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="labelProjectNameRecruitTo">
+                      <property name="text">
+                       <string>Project </string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="2">
+                     <widget class="QTableView" name="tableEmployees">
+                      <property name="autoFillBackground">
+                       <bool>true</bool>
+                      </property>
+                      <attribute name="horizontalHeaderMinimumSectionSize">
+                       <number>100</number>
+                      </attribute>
+                      <attribute name="horizontalHeaderDefaultSectionSize">
+                       <number>150</number>
+                      </attribute>
+                      <attribute name="horizontalHeaderHighlightSections">
+                       <bool>false</bool>
+                      </attribute>
+                      <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+                       <bool>false</bool>
+                      </attribute>
+                      <attribute name="horizontalHeaderStretchLastSection">
+                       <bool>true</bool>
+                      </attribute>
+                      <attribute name="verticalHeaderVisible">
+                       <bool>false</bool>
+                      </attribute>
+                      <attribute name="verticalHeaderCascadingSectionResizes">
+                       <bool>true</bool>
+                      </attribute>
+                      <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+                       <bool>false</bool>
+                      </attribute>
+                      <attribute name="verticalHeaderStretchLastSection">
+                       <bool>false</bool>
+                      </attribute>
+                     </widget>
+                    </item>
+                    <item row="1" column="2">
+                     <widget class="QComboBox" name="jobBox">
+                      <item>
+                       <property name="text">
+                        <string>developer</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>tester</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item row="4" column="2">
+                     <widget class="QPushButton" name="btnAddEmployee">
+                      <property name="text">
+                       <string>add</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="endProjectPage">
+                 <layout class="QHBoxLayout" name="horizontalLayout_7">
+                  <item>
+                   <layout class="QGridLayout" name="endProject">
+                    <item row="0" column="2">
+                     <widget class="QLineEdit" name="endProjectName"/>
+                    </item>
+                    <item row="1" column="2">
+                     <widget class="QPushButton" name="btnEndProject_2">
+                      <property name="text">
+                       <string>end</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="labelEndProjectName">
+                      <property name="text">
+                       <string>End Project name</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="2">
+                     <widget class="QTableView" name="tableProjectsToEnd">
+                      <attribute name="horizontalHeaderVisible">
+                       <bool>false</bool>
+                      </attribute>
+                      <attribute name="horizontalHeaderCascadingSectionResizes">
+                       <bool>true</bool>
+                      </attribute>
+                      <attribute name="horizontalHeaderDefaultSectionSize">
+                       <number>600</number>
+                      </attribute>
+                      <attribute name="horizontalHeaderHighlightSections">
+                       <bool>true</bool>
+                      </attribute>
+                      <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+                       <bool>false</bool>
+                      </attribute>
+                      <attribute name="horizontalHeaderStretchLastSection">
+                       <bool>true</bool>
+                      </attribute>
+                      <attribute name="verticalHeaderVisible">
+                       <bool>false</bool>
+                      </attribute>
+                      <attribute name="verticalHeaderCascadingSectionResizes">
+                       <bool>false</bool>
+                      </attribute>
+                      <attribute name="verticalHeaderHighlightSections">
+                       <bool>false</bool>
+                      </attribute>
+                      <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+                       <bool>false</bool>
+                      </attribute>
+                      <attribute name="verticalHeaderStretchLastSection">
+                       <bool>false</bool>
+                      </attribute>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="startProjectPage">
+                 <layout class="QHBoxLayout" name="horizontalLayout_4">
+                  <item>
+                   <layout class="QGridLayout" name="addProject">
+                    <item row="2" column="2">
+                     <spacer name="verticalSpacer_2">
+                      <property name="orientation">
+                       <enum>Qt::Vertical</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>20</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="labelProjectName">
+                      <property name="text">
+                       <string>New Project name</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QLineEdit" name="addProjectName"/>
+                    </item>
+                    <item row="1" column="2">
+                     <widget class="QPushButton" name="btnAddProject">
+                      <property name="text">
+                       <string>add</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="firePage">
+                 <layout class="QHBoxLayout" name="horizontalLayout_11">
+                  <item>
+                   <layout class="QGridLayout" name="gridLayout">
+                    <item row="0" column="0">
+                     <widget class="QFrame" name="frame">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_4">
+                       <item>
+                        <widget class="QLabel" name="labelDevelopres">
+                         <property name="text">
+                          <string>Developers</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QTableView" name="tableDevelopers">
+                         <attribute name="horizontalHeaderDefaultSectionSize">
+                          <number>150</number>
+                         </attribute>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="QFrame" name="frame_2">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_5">
+                       <item>
+                        <widget class="QLabel" name="labeTesters">
+                         <property name="text">
+                          <string>Testers</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QTableView" name="tableTesters">
+                         <attribute name="horizontalHeaderDefaultSectionSize">
+                          <number>147</number>
+                         </attribute>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item row="0" column="1" alignment="Qt::AlignLeft|Qt::AlignBottom">
+                     <widget class="QPushButton" name="btnDismiss">
+                      <property name="text">
+                       <string>dismiss</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="transferPage">
+                 <layout class="QHBoxLayout" name="horizontalLayout_10">
+                  <item>
+                   <layout class="QGridLayout" name="transfetEmployee">
+                    <item row="1" column="0">
+                     <spacer name="verticalSpacer_4">
+                      <property name="orientation">
+                       <enum>Qt::Vertical</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>20</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item row="3" column="0">
+                     <widget class="QLabel" name="labelProjectTo">
+                      <property name="styleSheet">
+                       <string notr="true">QLabel{
+		background-color: rgb(83, 83, 83);
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>Project to</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="labelProjectFrom">
+                      <property name="styleSheet">
+                       <string notr="true">QLabel{
+		background-color: rgb(83, 83, 83);
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>Project from</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="7" column="1">
+                     <widget class="QPushButton" name="btnAddToProject">
+                      <property name="text">
+                       <string>add</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="1">
+                     <widget class="QComboBox" name="comboBoxProejctFrom"/>
+                    </item>
+                    <item row="3" column="1">
+                     <widget class="QComboBox" name="comboBoxProjectTo"/>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QComboBox" name="comboBoxEmployee"/>
+                    </item>
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="labelEmployeeToTransfer">
+                      <property name="styleSheet">
+                       <string notr="true">QLabel{
+		background-color: rgb(83, 83, 83);
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>Employee name</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="1">
+                     <widget class="QPushButton" name="btnTransferEmployee">
+                      <property name="text">
+                       <string>transfer</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="5" column="1">
+                     <spacer name="verticalSpacer_5">
+                      <property name="orientation">
+                       <enum>Qt::Vertical</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>20</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item row="6" column="1">
+                     <widget class="QComboBox" name="comboBoxProjectsWhereToAdd"/>
+                    </item>
+                    <item row="6" column="0">
+                     <widget class="QLabel" name="labelAddToProject">
+                      <property name="styleSheet">
+                       <string notr="true">QLabel{
+		background-color: rgb(83, 83, 83);
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>Add to project</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabReports">
+       <attribute name="title">
+        <string>Reports</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QFrame" name="frameReports">
+          <property name="styleSheet">
+           <string notr="true">QFrame{
+	background-color: rgb(83, 83, 83);
+
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <layout class="QVBoxLayout" name="reportsPagesBtns">
+             <item>
+              <spacer name="verticalSpacer_7">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnCurrentProjects">
+               <property name="text">
+                <string>Current projects
+ with list of 
+employed</string>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>16</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnListOfStaff">
+               <property name="text">
+                <string>List of staff 
+with history 
+ of everyone</string>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>16</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnDiagram">
+               <property name="text">
+                <string>Diagram</string>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>16</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_6">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QStackedWidget" name="reportPages">
+          <property name="styleSheet">
+           <string notr="true">QStackedWidget{
+
+
+	background-color: rgb(57, 57, 57);
+
+}</string>
+          </property>
+          <property name="currentIndex">
+           <number>2</number>
+          </property>
+          <widget class="QWidget" name="reportCurrentProjects">
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QTableView" name="tableCurrentProjects">
+              <attribute name="horizontalHeaderCascadingSectionResizes">
+               <bool>true</bool>
+              </attribute>
+              <attribute name="horizontalHeaderDefaultSectionSize">
+               <number>250</number>
+              </attribute>
+              <attribute name="horizontalHeaderStretchLastSection">
+               <bool>true</bool>
+              </attribute>
+              <attribute name="verticalHeaderHighlightSections">
+               <bool>false</bool>
+              </attribute>
+              <attribute name="verticalHeaderStretchLastSection">
+               <bool>false</bool>
+              </attribute>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="reportListOfStaff">
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QTableView" name="tableListOfStaff">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QTableWidget { 
+	background-color: rgb(57, 57, 57);
+
+
+}</string>
+              </property>
+              <property name="sizeAdjustPolicy">
+               <enum>QAbstractScrollArea::AdjustIgnored</enum>
+              </property>
+              <attribute name="horizontalHeaderCascadingSectionResizes">
+               <bool>true</bool>
+              </attribute>
+              <attribute name="horizontalHeaderDefaultSectionSize">
+               <number>200</number>
+              </attribute>
+              <attribute name="horizontalHeaderHighlightSections">
+               <bool>true</bool>
+              </attribute>
+              <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+               <bool>false</bool>
+              </attribute>
+              <attribute name="horizontalHeaderStretchLastSection">
+               <bool>true</bool>
+              </attribute>
+              <attribute name="verticalHeaderCascadingSectionResizes">
+               <bool>false</bool>
+              </attribute>
+              <attribute name="verticalHeaderHighlightSections">
+               <bool>false</bool>
+              </attribute>
+              <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+               <bool>false</bool>
+              </attribute>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="reportDiagram">
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <item>
+             <widget class="QGraphicsView" name="diagram"/>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_13">
+      <item>
+       <widget class="QLabel" name="labelDate">
+        <property name="layoutDirection">
+         <enum>Qt::RightToLeft</enum>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>Date:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDateEdit" name="date">
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::UpDownArrows</enum>
+        </property>
+        <property name="correctionMode">
+         <enum>QAbstractSpinBox::CorrectToNearestValue</enum>
+        </property>
+        <property name="dateTime">
+         <datetime>
+          <hour>0</hour>
+          <minute>0</minute>
+          <second>10</second>
+          <year>2020</year>
+          <month>1</month>
+          <day>1</day>
+         </datetime>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,4 @@
+PyQt5~=5.15.6
+SQLAlchemy~=1.4.27
+psycopg2-binary
+PyQtChart 5.15.5
